@@ -49,8 +49,8 @@ $(document).ready(function(){
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
                     type:"POST",
-                    data: $(form).serialize(),
-                    url:"contact_process.php",
+                    data: $(form),
+                    url:"https://usebasin.com/f/dcd68af0a538",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 0.15, function() {
